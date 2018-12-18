@@ -3,6 +3,7 @@ import './App.css';
 
 import MeuComponente from './components/MeuComponente';
 import Time from './components/Time';
+import MyButton from './components/MyButton';
 
 class App extends Component {
   render() {
@@ -13,6 +14,7 @@ class App extends Component {
     }
     return (
       <div className="App">
+        <MyButton />
         <Time />
         <MeuComponente {...dados} />
       </div>
