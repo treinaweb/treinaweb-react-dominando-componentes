@@ -2,14 +2,28 @@ import React, { Component } from 'react';
 
 class MyButton extends Component{
 
-    sayHello(event){
-        event.preventDefault();
-        alert('Hello!');
+    constructor(props){
+        super(props);
+
+        this.state = {
+            isOn: true
+        }
+
+        this.handleClick = this.handleClick.bind(this);
+    }
+
+    
+
+    handleClick(){
+        this.setState((state, props) => {
+            return {isOn: !state.isOn};
+        })
     }
 
     render(){
+        const {state} = this;
         return (
-            <button onClick={this.sayHello} >Click Me</button>
+            <button onClick={this.handleClick} >{state.isOn ? 'Desligar' : 'Ligar'}</button>
         )
     }
 }
