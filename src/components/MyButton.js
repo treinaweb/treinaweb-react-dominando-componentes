@@ -23,7 +23,7 @@ class MyButton extends Component{
     render(){
         const {state} = this;
         return (
-            <button onClick={this.handleClick} >{state.isOn ? 'Desligar' : 'Ligar'}</button>
+            <button onClick={(event) => { this.handleClick(123) }} >{state.isOn ? 'Desligar' : 'Ligar'}</button>
         )
     }
 }
