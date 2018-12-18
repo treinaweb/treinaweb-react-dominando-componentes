@@ -10,7 +10,7 @@ class App extends Component {
     return (
       <div className="App">
         <MeuComponente />
-        <MeuComponenteEscolhido />
+        <MeuComponenteEscolhido nome="Akira" />
       </div>
     );
   }
