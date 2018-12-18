@@ -5,12 +5,14 @@ import MeuComponente, { MeusComponentes } from './components/MeuComponente';
 
 class App extends Component {
   render() {
-    const nome = 'TreinaWeb';
-    const MeuComponenteEscolhido  = MeusComponentes[nome];
+    const dados = {
+      nome: "Maria",
+      sobrenome: "Souza",
+      idade: 20
+    }
     return (
       <div className="App">
-        <MeuComponente />
-        <MeuComponenteEscolhido nome="Akira" />
+        <MeuComponente {...dados} />
       </div>
     );
   }
