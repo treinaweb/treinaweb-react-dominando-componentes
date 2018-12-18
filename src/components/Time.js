@@ -8,6 +8,7 @@ class Time extends Component{
         }
 
         setInterval(() => {
+            console.log(this.state.time);
             this.setState((state, props) => {
                 return {
                     time: state.time + 1

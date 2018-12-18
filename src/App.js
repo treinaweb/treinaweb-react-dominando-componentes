@@ -15,8 +15,6 @@ class App extends Component {
     return (
       <div className="App">
         <MyButton />
-        <Time />
-        <MeuComponente {...dados} />
       </div>
     );
   }
