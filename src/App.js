@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
 
-import MeuComponente, { MeusComponentes } from './components/MeuComponente';
+import MeuComponente from './components/MeuComponente';
+import Time from './components/Time';
 
 class App extends Component {
   render() {
@@ -12,6 +13,7 @@ class App extends Component {
     }
     return (
       <div className="App">
+        <Time />
         <MeuComponente {...dados} />
       </div>
     );
