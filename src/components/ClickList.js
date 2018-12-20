@@ -8,7 +8,11 @@ class ClickList extends Component{
                 abc
                 <ul>
                     {this.props.children.map(item => {
-                        return <li>{item}</li>
+                        return <li>
+                            <item.type prop2={this.props.number} >
+                                {item.props.children}
+                            </item.type>
+                        </li>
                     })}
                 </ul>
             </div>
