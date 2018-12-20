@@ -12,7 +12,6 @@ class ClickList extends Component{
     }
 
     setTotal(){
-        console.log(555)
         this.setState(state => {
             return {
                 total: state.total + 1
