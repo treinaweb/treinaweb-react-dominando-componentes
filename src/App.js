@@ -1,13 +1,16 @@
 import React, { Component } from 'react';
 import './App.css';
 
-import PeopleList from './components/PeopleList';
+import ClickList from './components/ClickList';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <PeopleList />
+        <ClickList>
+          <h1>TreinaWeb</h1>
+          <div>Ola web developers!</div>
+        </ClickList>
       </div>
     );
   }
