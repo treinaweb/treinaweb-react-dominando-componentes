@@ -29,6 +29,9 @@ class ClickListItem extends Component{
 
     render(){
         const { state, props } = this;
+        if(state.counter > 4){
+            throw new Error('!!!!!!');
+        }
         return (
             <li onClick={this.increment} >
                 Item {props.index} - {state.counter}

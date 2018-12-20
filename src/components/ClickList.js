@@ -7,10 +7,12 @@ class ClickList extends Component{
     constructor(props){
         super(props);
         this.state = {
-            total: 0
+            total: 0,
+            hasError: false
         }
 
         this.setTotal = this.setTotal.bind(this);
+        this.restart = this.restart.bind(this);
     }
 
     componentDidMount(){
@@ -19,6 +21,23 @@ class ClickList extends Component{
 
     componentWillUnmount(){
         Channel.removeListener('listItem:click', this.setTotal);
+    }
+
+    static getDerivedStateFromError(error) {
+        return {
+            hasError: true
+        }
+    }
+
+    componentDidCatch(error){
+        console.log(error)
+    }
+
+    restart(){
+        this.setState({
+            total: 0,
+            hasError: false
+        })
     }
 
     setTotal(){
@@ -31,6 +50,9 @@ class ClickList extends Component{
 
     render(){
         const { state } = this;
+        if(state.hasError){
+            return <button onClick={this.restart} >Restart</button>
+        }
         return (
             <div>
                 Total: {state.total}
