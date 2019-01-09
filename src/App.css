@@ -1,32 +1,94 @@
-.App {
-  text-align: center;
+.video-player{
+  position: relative;
+  max-width: 300px;
+  margin: 0 auto;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+.video-player video{
+  display: block;
+  width: 100%;
+  margin: 0 auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.video-player button{
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: none;
   color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.video-list{
+  display: flex;
+  flex-wrap: wrap;
 }
 
-@keyframes App-logo-spin {
+.video{
+  position: relative;
+  width: 150px;
+  border: 1px solid #ddd;
+  list-style-type: none;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 5px;
+  transition: all 0.5s ease;
+  cursor: pointer;
+  background-color: #f6f6f6;
+}
+
+.video:hover{
+  background-color: #fff;
+  transform: scale(1.1);
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+}
+
+
+.video img{
+  display: block;
+  width: calc(100% - 20px);
+  max-height: 150px;
+  margin: 10px auto;
+}
+
+.video-cinema{
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100vw;
+  height: 100vh;
+}
+
+.video-cinema video{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80vw;
+  max-height: 90vh;
+}
+
+.video-cinema button{
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  font-size: 25px;
+}
+
+
+video{
+  animation-name: ani-video;
+  animation-duration: 4s;
+  background-color: black;
+}
+
+@keyframes ani-video {
   from {
-    transform: rotate(0deg);
+    opacity: 0;
   }
   to {
-    transform: rotate(360deg);
+    opacity: 1;
   }
 }
