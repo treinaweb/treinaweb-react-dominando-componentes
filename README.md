@@ -1,68 +1,37 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+# TreinaWeb: curso ["React - Dominando Componentes"](https://www.treinaweb.com.br/curso/)
 
-In the project directory, you can run:
 
-### `npm start`
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+#### Lista de branches
+|  | Branch | Descrição |
+| ------ | ------ |  ------ | 
+[Download](https://github.com/treinaweb/treinaweb-react-introducao/archive/aula-02-01.zip)    |  aula-02-01     | Criando Componentes com Funções |
+[Download](https://github.com/treinaweb/treinaweb-react-introducao/archive/aula-02-02.zip)    |  aula-02-02     | Criando Componentes com Classes |
+[Download](https://github.com/treinaweb/treinaweb-react-introducao/archive/aula-02-03.zip)    |  aula-02-03     | Acessando Componentes de Objetos e Selecionando Componentes |
+[Download](https://github.com/treinaweb/treinaweb-react-introducao/archive/aula-03-01.zip)    |  aula-03-01     | Propriedades |
+[Download](https://github.com/treinaweb/treinaweb-react-introducao/archive/aula-03-02.zip)    |  aula-03-02     | Propriedades e Operador Spread |
+[Download](https://github.com/treinaweb/treinaweb-react-introducao/archive/aula-03-03.zip)    |  aula-03-03     | Estados |
+[Download](https://github.com/treinaweb/treinaweb-react-introducao/archive/aula-04-01.zip)    |  aula-04-01     | Trabalhando com Eventos |
+[Download](https://github.com/treinaweb/treinaweb-react-introducao/archive/aula-04-02.zip)    |  aula-04-02     | Escopo e Bind |
+[Download](https://github.com/treinaweb/treinaweb-react-introducao/archive/aula-04-03.zip)    |  aula-04-03     | Passando Parâmetros |
+[Download](https://github.com/treinaweb/treinaweb-react-introducao/archive/aula-04-04.zip)    |  aula-04-04     | O problema com alguns eventos de elementos |
+[Download](https://github.com/treinaweb/treinaweb-react-introducao/archive/aula-04-05.zip)    |  aula-04-05     | Ciclo de Vida dos Componentes |
+[Download](https://github.com/treinaweb/treinaweb-react-introducao/archive/aula-05-01.zip)    |  aula-05-01     | Listando Elementos |
+[Download](https://github.com/treinaweb/treinaweb-react-introducao/archive/aula-05-02.zip)    |  aula-05-02     | Iterando elementos com “Array.prototype.map()” |
+[Download](https://github.com/treinaweb/treinaweb-react-introducao/archive/aula-05-03.zip)    |  aula-05-03     | Keys |
+[Download](https://github.com/treinaweb/treinaweb-react-introducao/archive/aula-05-04.zip)    |  aula-05-04     | Parâmetros de Funções |
+[Download](https://github.com/treinaweb/treinaweb-react-introducao/archive/aula-06-01.zip)    |  aula-06-01     | Acessando Elementos Filhos - props.children |
+[Download](https://github.com/treinaweb/treinaweb-react-introducao/archive/aula-06-02.zip)    |  aula-06-02     | Propriedades |
+[Download](https://github.com/treinaweb/treinaweb-react-introducao/archive/aula-06-03.zip)    |  aula-06-03     | Eventos |
+[Download](https://github.com/treinaweb/treinaweb-react-introducao/archive/aula-06-04.zip)    |  aula-06-04     | Criando Referências - Refs |
+[Download](https://github.com/treinaweb/treinaweb-react-introducao/archive/aula-06-05.zip)    |  aula-06-05     | Comunicação entre componentes - Event Emitters |
+[Download](https://github.com/treinaweb/treinaweb-react-introducao/archive/aula-06-06.zip)    |  aula-06-06     | Capturando Erros dos Filhos - componentDidCatch() |
+[Download](https://github.com/treinaweb/treinaweb-react-introducao/archive/aula-07-01.zip)    |  aula-07-01     | Criando Portais |
+[Download](https://github.com/treinaweb/treinaweb-react-introducao/archive/aula-08-01.zip)    |  aula-08-01     | Compartilhando Dados |
+[Download](https://github.com/treinaweb/treinaweb-react-introducao/archive/projeto-02-01.zip)    |  projeto-02-01     | Projeto: Componentes da aplicação |
+[Download](https://github.com/treinaweb/treinaweb-react-introducao/archive/projeto-03-01.zip)    |  projeto-03-01     | Projeto: Propriedades e Estados dos Componentes |
+[Download](https://github.com/treinaweb/treinaweb-react-introducao/archive/projeto-04-01.zip)    |  projeto-04-01     | Projeto: Eventos |
+[Download](https://github.com/treinaweb/treinaweb-react-introducao/archive/projeto-05-01.zip)    |  projeto-05-01     | Projeto: Listas de Elementos |
+[Download](https://github.com/treinaweb/treinaweb-react-introducao/archive/projeto-06-01.zip)    |  projeto-06-01     | Projeto: Comunicação entre Componentes |
+[Download](https://github.com/treinaweb/treinaweb-react-introducao/archive/projeto-07-01.zip)    |  projeto-07-01     | Projeto: Alterando o vídeo de lugar |
