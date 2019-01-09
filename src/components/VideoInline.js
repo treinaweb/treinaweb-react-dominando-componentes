@@ -1,8 +1,10 @@
 import React from 'react';
 
-function VideoInline(){
+function VideoInline(props){
     return (
-        <div className="video-inline" ></div>
+        <div className="video-inline" >
+            { props.children }
+        </div>
     );
 }
 

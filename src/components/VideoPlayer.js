@@ -1,6 +1,13 @@
 import React, {Component} from 'react';
 
 class VideoPlayer extends Component{
+
+    constructor(props){
+        super(props);
+
+        this.videoElement = React.createRef();
+    }
+
     render(){
         const { video } = this.props;
         return (
@@ -8,6 +15,7 @@ class VideoPlayer extends Component{
                 <video
                     src={video.url}
                     controls autoPlay loop
+                    ref={this.videoElement}
                  />
                  <button>[ ]</button>
             </div>

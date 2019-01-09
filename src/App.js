@@ -2,9 +2,11 @@ import React, { Component } from 'react';
 import './App.css';
 
 import { VideoService } from './services/VideoService';
+import { Channel } from './services/EventService';
 
 import VideoList from './components/VideoList';
 import VideoPlayer from './components/VideoPlayer';
+import VideoInline from './components/VideoInline';
 import VideoCinema from './components/VideoCinema';
 
 class App extends Component {
@@ -13,6 +15,9 @@ class App extends Component {
     super(props);
 
     this.selectVideo = this.selectVideo.bind(this);
+
+    this.inlineVideo = React.createRef();
+    this.cinemaVideo = React.createRef();
 
     this.state = {
       videos: [],
@@ -23,8 +28,11 @@ class App extends Component {
   async componentDidMount(){
     const videos = await VideoService.list();
     this.setState({videos});
+    Channel.on('video:select', this.selectVideo)
+  }
 
-    this.selectVideo(videos[0]);
+  componentWillUnmount(){
+    Channel.removeListener('video:select', this.selectVideo);
   }
 
   selectVideo(video){
@@ -36,8 +44,13 @@ class App extends Component {
     return (
       <div className="App">
        <VideoPlayer video={state.selectedVideo} />
+       <VideoInline>
+        <div ref={this.inlineVideo} ></div>
+       </VideoInline>
        <VideoList videos={state.videos} />
-       <VideoCinema isActive={false} />
+       <VideoCinema isActive={false}>
+        <div ref={this.cinemaVideo} ></div>
+       </VideoCinema>
       </div>
     );
   }
