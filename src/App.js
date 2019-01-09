@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
 
+import { VideoService } from './services/VideoService';
+
 import VideoList from './components/VideoList';
 import VideoPlayer from './components/VideoPlayer';
 import VideoCinema from './components/VideoCinema';
@@ -9,14 +11,24 @@ class App extends Component {
 
   constructor(props){
     super(props);
+
+    this.selectVideo = this.selectVideo.bind(this);
+
     this.state = {
       videos: [],
-      selectedVideo: {
-        img: 'https://storage.googleapis.com/coverr-public/thumbnails/Albert-Dock.jpg',
-        name: 'Albert-Dock',
-        url: 'https://app.coverr.co/s3/mp4/Albert-Dock.mp4'
-      }
+      selectedVideo: {}
     }
+  }
+
+  async componentDidMount(){
+    const videos = await VideoService.list();
+    this.setState({videos});
+
+    this.selectVideo(videos[0]);
+  }
+
+  selectVideo(video){
+    this.setState({selectedVideo: video});
   }
 
   render() {
