@@ -1,21 +1,19 @@
 import React from 'react';
 
 
-function VideoList(){
+function VideoList(props){
+    const videos = props.videos || [];
+
     return (
         <ul className="video-list" >
-            <li className="video" >
-                <img src="https://storage.googleapis.com/coverr-public/thumbnails/Albert-Dock.jpg" alt="Albert-Dock" />
-                <div>Albert-Dock</div>
-            </li>
-            <li className="video" >
-                <img src="https://storage.googleapis.com/coverr-public/thumbnails/Albert-Dock.jpg" alt="Albert-Dock" />
-                <div>Albert-Dock</div>
-            </li>
-            <li className="video" >
-                <img src="https://storage.googleapis.com/coverr-public/thumbnails/Albert-Dock.jpg" alt="Albert-Dock" />
-                <div>Albert-Dock</div>
-            </li>
+            {
+                videos.map(video => (
+                    <li key={video.id} className="video" >
+                        <img src={video.img} alt={video.name} />
+                        <div>{video.name}</div>
+                    </li>
+                ))
+            }
         </ul>
     )
 }
