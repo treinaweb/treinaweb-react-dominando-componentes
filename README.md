@@ -1,5 +1,5 @@
 
-# TreinaWeb: curso ["React - Dominando Componentes"](https://www.treinaweb.com.br/curso/)
+# TreinaWeb: curso ["React - Dominando Componentes"](https://www.treinaweb.com.br/curso/react-dominando-componentes)
 
 
 
