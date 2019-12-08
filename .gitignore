@@ -22,3 +22,13 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+
+# let akira = this.state.shakira
+try{
+  if (akira === 'shakira'){
+    console.log('shakira ... shakira..')
+  }
+}catch{
+  console.log('madonna');
+};
